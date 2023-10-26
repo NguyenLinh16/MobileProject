@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="12dp"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/icon_image"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lavender_border"
+        android:layout_marginTop="10dp"
+        android:hint="Username"
+        android:imeOptions="actionNext"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:padding="10dp"
+        android:id="@+id/login_username"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lavender_border"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:imeOptions="actionDone"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:padding="10dp"
+        android:id="@+id/login_password"/>
+    <TextView
+        android:id="@+id/loginRedirectText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot password?"
+        android:textSize="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+
+</LinearLayout>

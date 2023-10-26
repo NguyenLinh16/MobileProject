@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#EFB811">
+
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <ImageView
+        android:id="@+id/imageViewMain"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/imageViewDelete"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/finish"
+        app:layout_constraintEnd_toStartOf="@+id/container"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDelete"
+        app:layout_constraintVertical_bias="0.684"
+        app:srcCompat="@drawable/hinhca" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="168dp"
+        android:layout_marginBottom="16dp"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="250dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="vertical"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="444dp"
+                android:background="#EFB811">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="280dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="20px"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="280dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="20px"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="280dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="20px"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="339dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="280dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="20px"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="280dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="20px"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="280dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="20px"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="339dp"
+                    android:layout_gravity="center"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="280dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="20px"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="280dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="20px"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background" />
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="280dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="20px"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView_scores"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_weight="1"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toEndOf="@+id/buttonAdd"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewDelete"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toStartOf="@+id/container"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAdd"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="16dp"
+        android:text="FINISH"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

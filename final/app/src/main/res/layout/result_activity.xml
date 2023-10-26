@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+    <TextView
+        android:id="@+id/TV_Score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SCORE"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:background="@color/lavender"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/ListView"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        />
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_marginTop="680dp"
+        />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="680dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="3dp"
+        android:text="Logout" />
+
+
+</RelativeLayout>
